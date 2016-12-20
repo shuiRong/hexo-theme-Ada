@@ -1,0 +1,112 @@
+html{
+	font-size:20px;
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff;
+	font-family:'Rubik','微软雅黑',sans-serif;
+}
+
+/*---content.jade--nav.jade--index.jade---*/
+#container{
+	position:relative;
+	background:white;
+	width:30rem;
+	margin:0 auto;
+	border:1px solid transparent;
+	text-align:center;
+}
+#subtitle{
+	font-size:1.5rem;
+	color:#c1b9c2;
+	font-family: '微软雅黑';
+}
+#description{
+	color:#aaa;
+	font-size:0.8rem;
+}
+#links{
+	position:absolute;
+	left:-8rem;
+	top:3rem;
+	width:2.1rem;
+	color:rgb(1,120,218);
+}
+#github{
+	margin-top:1rem;
+	visibility: hidden;
+}
+#zhihu{
+	visibility: hidden;
+	margin-top:0.5rem;
+	width:1.8rem;
+	height:1.8rem;
+	border-radius:50%;
+}
+.indexTitles{
+	font-size:1.4rem;
+	text-align: left;
+	margin-bottom:0.5rem;
+}
+.indexTime{
+	font-size:0.7rem;
+	color:#24385e;
+	margin-right:1rem;
+	padding-bottom:3px;
+	font-weight:bold;
+	border-bottom:2px dashed #ddd;
+}
+.indexTags{
+	font-size:0.9rem;
+	color:#99b4ce;
+	margin-bottom:1rem;
+	padding-bottom:3px;
+	font-weight:bold;
+	border-bottom:2px dashed #ddd;
+}
+a{
+	color:rgb(1,120,218);
+	text-decoration: none;
+}
+a:visited{
+	color:rgb(1,120,218);
+}
+.indexTitles a{
+	text-decoration:none;
+	color:#428bca;
+	border-bottom:2px solid #ddd;
+}
+.indexTitles a:visited{
+	color:#428bca;
+}
+/*---post.jade---*/
+#postContainer{
+	width:45rem;
+	margin:0 auto;
+	padding:1.5rem;
+}
+#logo{
+	font-size:1.5rem;
+	color:#ddd;
+	text-align:center;
+}
+#postTop{
+	text-align:center;
+}
+.postTime{
+	margin-right:1rem;
+	font-weight:bold;
+	font-size:0.8rem;
+}
+.postTags{
+	font-weight:bold;
+	color:#99b4ce;
+}
+#articleDiv{
+	overflow: auto;
+	color:#666;
+	word-break:hyphenate;
+}

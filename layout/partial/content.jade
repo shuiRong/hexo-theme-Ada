@@ -1,0 +1,18 @@
+// index的主要内容div
+#content
+	-var postsArr = site.posts.data  
+	-var postsLength = site.posts.length
+
+	-for(var i=0; i<postsLength;i++)
+		-var tagsLength = postsArr[i].tags.length
+		-var theTags = ''
+		-
+			for(var j=0;j<tagsLength;j++)
+				theTags += (postsArr[i].tags.data[j].name+' ')
+
+
+		div.indexTitles
+			a(href='#{config.root}#{postsArr[i].path}') #{postsArr[i].title}
+			br
+			span.indexTime(class='fa fa-calendar' aria-hidden='true') #{date(postsArr[i].date,'YYYY-M-D')}
+			span.indexTags(class='fa fa-tags' aria-hidden='true') #{theTags}

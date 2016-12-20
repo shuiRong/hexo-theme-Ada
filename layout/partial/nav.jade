@@ -1,0 +1,12 @@
+//导航栏div
+#nav
+	//- a(href='#' target='_blanket') 标签
+	//- a(href='#' target='_blanket') 分类
+	//- span#urls 超链接
+	div#links(class='fa fa-link')
+		-var githubUrl = theme.github
+		-var zhihuUrl = theme.zhihu
+		a(class='urls' href=''+githubUrl+'' target='_blanket')
+			span#github(class='fa fa-github fa-2x')
+		a(class='urls' href=''+zhihuUrl+'' target='_blanket')
+			img#zhihu(src='/images/zhihu.png')

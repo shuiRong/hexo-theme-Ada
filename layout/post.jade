@@ -1,0 +1,22 @@
+doctype html
+html
+	include partial/head.jade
+	body
+		-var tags = '';
+		-for(var i=0; i<page.tags.length;i++)
+			-
+				var tag = page.tags.data[i]
+				tags += (tag.name+' ')
+		#postContainer
+			#postTop
+				h4#logo #{theme.logo}
+				br
+				br
+				h2#postTitle #{page.title}
+				br
+				span.postTime(class='fa fa-calendar' aria-hidden='true') #{date(page.date['_i'],'YYYY-M-D')}
+				span.postTags(class='fa fa-tags'  aria-hidden='true') #{tags}
+				br
+				br
+			-str = markdown(page.content)
+			section#articleDiv!= str
