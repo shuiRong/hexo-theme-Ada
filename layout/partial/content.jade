@@ -2,7 +2,16 @@
 #content
 	-var postsArr = site.posts.data  
 	-var postsLength = site.posts.length
-
+	//这个函数是用来对数据根据时间排序的，倒序。
+	-
+		var tempArr =[];
+		for(j=0; j<postsLength; j++)
+			tempArr.push(postsArr[j])
+		postsArr = tempArr
+		postsArr.sort(function(a,b){
+			return b.date['_i'] - a.date['_i']
+		})
+	//到这里，数据就根据时间排好序了。
 	-for(var i=0; i<postsLength;i++)
 		-var tagsLength = postsArr[i].tags.length
 		-var theTags = ''

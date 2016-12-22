@@ -10,12 +10,35 @@ body{
 	font-family:'Rubik','微软雅黑',sans-serif;
 }
 
+
+@media (max-width:350px){
+	html{
+		font-size:15px;
+	}
+	#container{
+		width:9rem;
+	}
+	#postContainer{
+		width:9rem;
+	}
+}
+@media (min-width:800px){
+	#container{
+		width:34rem;
+	}
+	#postContainer{
+		width:45rem;
+	}
+	
+}
+
 /*---content.jade--nav.jade--index.jade---*/
 #container{
 	position:relative;
 	background:white;
-	width:30rem;
 	margin:0 auto;
+	padding-left:1rem;
+	padding-right:1rem;
 	border:1px solid transparent;
 	text-align:center;
 }
@@ -24,16 +47,16 @@ body{
 	color:#c1b9c2;
 	font-family: '微软雅黑';
 }
+#links{
+	left:-3rem;
+	top:5rem;
+	position:absolute;
+	width:2.1rem;
+	color:rgb(1,120,218);
+}
 #description{
 	color:#aaa;
 	font-size:0.8rem;
-}
-#links{
-	position:absolute;
-	left:-8rem;
-	top:3rem;
-	width:2.1rem;
-	color:rgb(1,120,218);
 }
 #github{
 	margin-top:1rem;
@@ -49,23 +72,23 @@ body{
 .indexTitles{
 	font-size:1.4rem;
 	text-align: left;
-	margin-bottom:0.5rem;
+	margin-bottom:0.6rem;
 }
 .indexTime{
 	font-size:0.7rem;
 	color:#24385e;
 	margin-right:1rem;
-	padding-bottom:3px;
+	padding-bottom:0.2rem;
 	font-weight:bold;
-	border-bottom:2px dashed #ddd;
+	border-bottom:0.1rem dashed #ddd;
 }
 .indexTags{
 	font-size:0.9rem;
 	color:#99b4ce;
 	margin-bottom:1rem;
-	padding-bottom:3px;
+	padding-bottom:0.2rem;
 	font-weight:bold;
-	border-bottom:2px dashed #ddd;
+	border-bottom:0.1rem dashed #ddd;
 }
 a{
 	color:rgb(1,120,218);
@@ -77,14 +100,16 @@ a:visited{
 .indexTitles a{
 	text-decoration:none;
 	color:#428bca;
-	border-bottom:2px solid #ddd;
+	border-bottom:0.1rem solid #ddd;
 }
 .indexTitles a:visited{
 	color:#428bca;
 }
 /*---post.jade---*/
 #postContainer{
-	width:45rem;
+	/*width:45rem;移动端适配点*/ 
+	padding-left:1rem;
+	padding-right:1rem;
 	margin:0 auto;
 	padding:1.5rem;
 }
@@ -109,4 +134,5 @@ a:visited{
 	overflow: auto;
 	color:#666;
 	word-break:hyphenate;
+	padding-bottom:5rem;  /*Mobile适配点*/
 }
