@@ -1,6 +1,8 @@
 # hexo-theme-Ada
 Ada is an concise theme for Hexo.
+
 [预览](https://shuirong.github.io/)
+
 [已被Hexo.io收录](https://hexo.io/themes/)
 
 功能少了少了点，但都是我觉得没有必要的功能。
