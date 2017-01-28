@@ -6,7 +6,7 @@ Ada is an concise theme for Hexo.
 [已被Hexo.io收录](https://hexo.io/themes/)
 
 功能少了少了点，但都是我觉得没有必要的功能。
-这是因为我觉得博客的第一要义是内容。
+这是因为我觉得博客的第一要义是内容。(尽管至今没有什么干货...)
 
 ---
 ![index](/screenshots/Ada1.png)
@@ -18,9 +18,11 @@ Ada is an concise theme for Hexo.
 Execute the following command under your `hexo` folder.
 
 ```
-git clone https://github.com/gaoryrt/hexo-theme-pln.git themes/pln
+git clone https://github.com/gaoryrt/hexo-theme-pln.git themes/Ada
 ```
 Then modify the property `theme` of the file `hexo/_config.yml`  to `theme: Ada`
+
+And then execute the command `npm install hexo-renderer-jade --save` under your root folder.
 
 # Update
 Execute the following command to update Ada.
@@ -31,7 +33,7 @@ git pull
 ```
 
 # Uninstall
-Execute the following command to uninstall Pln.
+Execute the following command to uninstall Ada.
 ```
 cd themes
 rm -rf Ada
