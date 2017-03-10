@@ -2,11 +2,7 @@ doctype html
 html
 	include partial/head.jade
 	body
-		-var tags = '';
-		-for(var i=0; i<page.tags.length;i++)
-			-
-				var tag = page.tags.data[i]
-				tags += (tag.name+' ')
+
 		#postContainer
 			#postTop
 				h4#logo #{theme.logo}
@@ -15,8 +11,12 @@ html
 				h2#postTitle #{page.title}
 				br
 				span.postTime(class='fa fa-calendar' aria-hidden='true') #{date(page.date['_i'],'YYYY-M-D')}
-				span.postTags(class='fa fa-tags'  aria-hidden='true') #{tags}
+				each tag in page.tags.data
+					span.postTags(class='fa fa-tags'  aria-hidden='true') &nbsp;#{tag.name}
 				br
 				br
 			-str = markdown(page.content)
 			section#articleDiv!= str
+		script(src='/js/jquery.min.js')
+		script(src='/js/highlight.min.js')
+		script(src='/js/start.js')
