@@ -89,3 +89,7 @@ p{
     letter-spacing: 1px;
     line-height: 30px;
 }
+h1,h2,h3,h4,h5{
+    margin: 1rem;
+    margin-left: 0;
+}
