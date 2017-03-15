@@ -54,6 +54,7 @@ strong{
 }
 pre{
     margin: 0.2rem 0 1.5rem 0;
+    overflow: auto;
 }
 code{
     border-radius: 7px;
