@@ -51,9 +51,10 @@ span{
 }
 strong{
     color: darkgreen;
+    margin: 1rem 0;
 }
 pre{
-    margin: 0.2rem 0 1.5rem 0;
+    margin: 1rem 0;
     overflow: auto;
 }
 code{
@@ -72,7 +73,7 @@ ul,ol{
     color: darkgoldenrod;
 }
 ul li,ol li{
-    margin: -0.2rem 0 ;
+    margin: 0.5rem 0 ;
     line-height: 30px;
 }
 ol{
@@ -83,10 +84,10 @@ ol li{
 }
 hr{
     border-color: lightyellow;
-    margin: 1.5rem 0 ;
+    margin: 1rem 0 ;
 }
 p{
-    margin: -10px 0;
+    margin: 0;
     letter-spacing: 1px;
     line-height: 30px;
 }
