@@ -1,0 +1,97 @@
+/*---post.jade---*/
+@media (max-width:470px){
+    html{
+        font-size:15px;
+    }
+    #postContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:800px){
+    #postContainer{
+        width:50%;
+        padding: 3rem;
+        margin:0 auto; 
+    }
+}
+
+#postTop{
+    text-align:center;
+}
+#logo{
+    font-size:1.5rem;
+    color:#ddd;
+    text-align:center;
+}
+.postTime{
+    margin-right:1rem;
+    font-weight:bold;
+    font-size:0.8rem;
+}
+.postTags{
+    font-weight:bold;
+    color:#99b4ce;
+    margin-left: 1rem;
+}
+
+#articleDiv{
+    width: 100%;
+    color: black;
+    padding-bottom:5rem;  /*Mobile适配点*/
+}
+span{
+    display:inline-block;
+    word-break: break-all;
+}
+/*markdown 的样式*/
+#postContainer a{
+    border-bottom-width: 2px;
+    border-bottom-style: dashed;
+}
+strong{
+    color: darkgreen;
+    margin: 1rem 0;
+}
+pre{
+    margin: 1rem 0;
+    overflow: auto;
+}
+code{
+    border-radius: 7px;
+}
+blockquote{
+    margin: -0.5rem 0 ;
+}
+blockquote p{
+    padding: 0.5rem 1rem;
+    background: lightgrey;
+}
+ul,ol{
+    margin: -0.5rem 0;
+    padding-left: 1.5rem;
+    color: darkgoldenrod;
+}
+ul li,ol li{
+    margin: 0;
+    line-height: 20px;
+}
+ol{
+    font-weight: bold;
+}
+ol li{
+    font-weight: normal;
+}
+hr{
+    border-color: lightyellow;
+    margin: 1rem 0 ;
+}
+p{
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+h1,h2,h3,h4,h5{
+    margin: 1rem;
+    margin-left: 0;
+}
