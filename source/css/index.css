@@ -31,7 +31,7 @@ body{
 }
 @media (min-width:800px){
     #container{
-        width:30%;
+        width:35%;
     }
     #postContainer{
         width:50%;   
@@ -42,6 +42,11 @@ body{
 }
 
 /*---content.jade--nav.jade--index.jade---*/
+canvas{
+    position: fixed;  /*使特效保持在页面上，不滚动*/
+    top: 0;
+    left: 0;
+}
 #container{
     position:relative;
     background:white;
@@ -50,6 +55,8 @@ body{
     padding-right:1rem;
     border:1px solid transparent;
     text-align:center;
+    z-index: 10;
+    opacity: 0.85;
 }
 #subtitle{
     font-size:1.5rem;

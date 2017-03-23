@@ -1,6 +1,12 @@
 window.onload=function(){
+	console.log('Hello,Friend !');
 	$('links').onmouseover = mouseOver;
 	$('links').onmouseout = mouseOut;
+
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js','js/particles.json', function() {
+    	//console.log('加载particles.js');
+    });
 }
 
 function $(id){

@@ -58,10 +58,6 @@ zhihu: https://www.zhihu.com/people/shui-rong-10/
 # Skills
 原生CSS、原生JavaScript、Jade(Pug)模板
 
-# project log:
-
-*   2017-3-9:   修改了代码高亮的及markdown相关的样式
-
 # PS
-关于本项目或者其他的事，有任何想法都可以给我联系我，联系方式就不说了，你自己想办法。
 
+关于本项目或者其他的事，有任何想法都可以给我联系我.`
