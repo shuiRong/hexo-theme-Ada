@@ -69,7 +69,7 @@ blockquote p{
 ul,ol{
     margin: -0.5rem 0;
     padding-left: 1.5rem;
-    color: darkgoldenrod;
+    color: black;
 }
 ul li,ol li{
     margin: 0;
