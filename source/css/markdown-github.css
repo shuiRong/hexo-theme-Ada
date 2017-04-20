@@ -695,6 +695,10 @@
     vertical-align: middle;
 }
 
+#postContainer br {
+    display: none;
+}
+
 @media (min-width: 43.75em) {
     body {
         padding: 30px;
